@@ -1,0 +1,9 @@
+{% extends "reserva.html" %}
+
+{% block logged %}
+<div class="menu-login">
+    <h4 id="Bienvenido">Bienvenido {{name}}</h4>
+    <a href="{{ url_for('logout') }}" id="logout">Cerrar Sesion</a> 
+</div>
+
+{% endblock %}

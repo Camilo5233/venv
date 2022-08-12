@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 20px;
+    width: 600px;
+    height: 600px;
+    
+    background: #DE4912;
+    border-radius: 2px;
+    padding: 20px;
+    color: white;
+}
+
+.signin{
+   color: white;
+   text-decoration: none;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    width: 50%;
+    margin-right: -4px;
+
+}

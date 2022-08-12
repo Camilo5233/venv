@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel X | Reserva</title>
+    <link rel="stylesheet" href="./static/css/styles-reserva.css">
+    <script src="https://kit.fontawesome.com/305732bc07.js" crossorigin="anonymous"></script>
+    <script defer src="./static/js/sidebar.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.js"></script>
+    <script src="./static/js/scripts.js"></script>
+</head>
+<body>
+
+</head>
+<body>
+    <header id="header" class="header-main">
+        <nav class="nav">
+            <button class="nav-toggle" aria-label="Abrir Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="/" class="nav-menu-link">Inicio</a></li>
+                <li class="nav-menu-item"><a href="/reserva" class="nav-menu-link">Reserva</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link">Habitaciones</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link">Contacto</a></li>
+            </ul>
+        </nav>
+            <a href="/" class="logo">
+                <img src="./static/images/hotelx-logo.png" alt="Hotel X logo">
+            </a>
+            <!-- {% if login_user %}  
+                
+            {% else %} -->
+            
+            {% block login %}
+
+            {% endblock %}
+
+            {% block logged %}
+
+            {% endblock %}
+
+            
+                
+           <!--  {% endif %} -->
+                
+                           
+    </header>
+
+    <section class="container-reserva">
+        <div class="box-reserva">
+            <form action="">
+                <label for="">Fecha de llegada</label>
+                <input type="date" id="fecha-llegada" >
+                <label for="">Fecha de salida</label>
+                <input type="date" id="fecha-salida" >
+                
+
+                <input type="submit" value="Buscar habitaciones disponibles" class="btnbuscar-habitaciones">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
